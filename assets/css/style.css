@@ -1,0 +1,336 @@
+/* GENERAL
+=========================== */
+
+:root {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", Arial, sans-serif;
+  color: #333;
+  background-image: url("../img/bg.png");
+}
+
+.container {
+  margin: 0 auto;
+  width: 1400px;
+  display: flex;
+  align-items: center;
+}
+
+/* HEADER
+=========================== */
+
+header {
+  background-color: hsl(20, 100%, 31%);
+  padding: 15px;
+  color: hsl(0, 0%, 100%);
+  border-bottom: 5px solid hsl(0, 0%, 100%);
+}
+
+.header_info {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header_info p:not(:first-child) {
+  margin-left: 10px;
+}
+
+/* SECTION MAIN
+=========================== */
+.main {
+  display: flex;
+  flex-flow: column;
+  padding: 20px 0px;
+  width: 100%;
+}
+
+.main h1 {
+  color: hsl(20, 100%, 52%);
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: right;
+  width: 100%;
+}
+
+/* INFO BOX */
+.send_info_box {
+  display: flex;
+  background-color: hsl(0, 0%, 92%);
+  width: 100%;
+  margin-top: 10px;
+}
+
+.send_info_box .image {
+  display: flex;
+  background-image: url("../img/big-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  justify-content: flex-end;
+}
+
+.send_info_box .info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: hsla(0, 0%, 90%, 0.75);
+  width: 50%;
+  height: 500px;
+  padding: 20px;
+  border-top: 5px solid hsl(20, 100%, 50%);
+  position: relative;
+}
+
+.send_info_box .info img {
+  position: absolute;
+  top: 0;
+}
+
+.send_info_box .info h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.send_info_box .info .input-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.send_info_box .info .input-boxes > input,
+select {
+  margin: 10px 0px 0px 10px;
+  padding: 15px;
+  width: 40%;
+}
+
+.send_info_box .info .input-boxes > input::placeholder {
+  color: hsl(0, 0%, 0%);
+}
+.send_info_box .info .input-boxes button {
+  display: flex;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  background: hsl(20, 100%, 50%);
+  padding: 15px;
+  width: auto;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.send_info_box .info .input-boxes button:hover {
+  cursor: pointer;
+  background-color: hsl(20, 95%, 57%);
+}
+
+.fa-envelope-o {
+  margin-right: 5px;
+}
+
+/* ARTICLES
+=========================== */
+
+.articles {
+  display: flex;
+  flex-flow: column;
+  margin-top: 50px;
+}
+
+.articles .container {
+  align-items: flex-start;
+}
+
+.articles .title {
+  display: flex;
+  flex-flow: row;
+  align-items: baseline;
+}
+
+.articles .title h2 {
+  color: hsl(20, 100%, 50%);
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.articles .box {
+  width: 33%;
+}
+
+.articles .box:not(:first-child) {
+  margin-left: 10px;
+}
+
+.articles .box .article:not(:first-child) {
+  margin-top: 10px;
+}
+
+.articles .box .article p {
+  margin-top: 5px;
+}
+
+/* TESTIMONIALS
+=========================== */
+.testimonials {
+  margin-bottom: 80px;
+}
+
+.testimonials .container {
+  display: flex;
+  flex-flow: column;
+  margin-top: 50px;
+  align-items: flex-start;
+}
+
+.testimonials .section-title h2 {
+  color: hsl(20, 100%, 50%);
+  font-weight: 500;
+}
+
+.testimonials .boxes {
+  display: flex;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.testimonials .boxes .box {
+  display: flex;
+  flex-flow: column;
+  width: 33%;
+  background-color: hsl(0, 0%, 95%);
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+}
+
+.testimonials .boxes .box:not(:first-child) {
+  margin-left: 10px;
+}
+
+.testimonials .boxes .box > *:not(:first-child) {
+  margin-top: 10px;
+}
+
+.testimonials .boxes .box .profile-image {
+  width: 153px;
+  height: 153px;
+  border-radius: 100px;
+  position: relative;
+  top: -35px;
+}
+
+.testimonials .boxes .box .name h4 {
+  color: hsl(20, 100%, 50%);
+}
+
+.testimonials .boxes .box button {
+  font-size: 1rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  border: none;
+  padding: 15px;
+  width: 45%;
+  background-color: hsl(0, 0%, 60%);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* NEWSLISTER
+=========================== */
+.newslister {
+  background: hsl(20, 100%, 50%) url("../img/newsletter-bg.png");
+  background-attachment: fixed;
+  padding: 40px;
+  color: hsl(0, 0%, 100%);
+}
+
+.newslister .container {
+  display: flex;
+  flex-flow: column;
+}
+
+.newslister .container > *:not(:first-child) {
+  margin-top: 15px;
+}
+
+.newslister .title h2 {
+  font-weight: 500;
+}
+
+.newslister .input-boxes {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.newslister .input-boxes input,
+button {
+  padding: 10px;
+}
+
+.newslister .input-boxes input {
+  width: 20%;
+}
+
+.newslister .input-boxes input:focus {
+  outline: 0;
+}
+
+.newslister .input-boxes input:not(:first-child),
+button {
+  margin-left: 15px;
+}
+
+.newslister .input-boxes button {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: hsl(20, 100%, 50%);
+  text-transform: uppercase;
+  width: 10%;
+  border: none;
+  border-radius: 5px;
+}
+
+/* FOOTER
+=========================== */
+footer {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(20, 100%, 31%);
+  padding: 40px;
+}
+
+footer .box {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+footer .box .socials {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+footer .box .socials > *:not(:first-child) {
+  margin-left: 10px;
+}
+
+footer .box .socials img {
+  object-fit: cover;
+  object-position: top;
+  width: 32px;
+  height: 32px;
+}
